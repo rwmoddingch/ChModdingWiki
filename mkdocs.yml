@@ -1,0 +1,69 @@
+site_name: RainWorld Modding
+theme:
+  palette: 
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  language: zh-Hant
+  font:
+    text: Noto Sans Simplified Chinese
+    code: Fira Mono
+  name : material
+  custom_dir: overrides
+  icon:
+    repo: fontawesome/brands/git-alt
+    admonition:
+       note: fontawesome/solid/note-sticky
+       abstract: fontawesome/solid/book
+       info: fontawesome/solid/circle-info
+       tip: fontawesome/solid/bullhorn
+       success: fontawesome/solid/check
+       question: fontawesome/solid/circle-question
+       warning: fontawesome/solid/triangle-exclamation
+       failure: fontawesome/solid/bomb
+       danger: fontawesome/solid/skull
+       bug: fontawesome/solid/robot
+       example: fontawesome/solid/flask
+       quote: fontawesome/solid/quote-left
+  features:
+    - navigation.tracking
+    - content.code.copy
+    - content.code.select
+
+repo_url: https://github.com/HarvieSorroway/TheDroneMaster
+repo_name: HarvieSorroway/TheDroneMaster
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
