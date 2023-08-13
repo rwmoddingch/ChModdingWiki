@@ -1,5 +1,6 @@
-site_name: RainWorld Modding
+site_name: 雨世界modding
 theme:
+  logo: assets/rainworld-title.png
   palette: 
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -46,9 +47,10 @@ theme:
     - navigation.tracking
     - content.code.copy
     - content.code.select
+    - content.code.annotate
 
-repo_url: https://github.com/HarvieSorroway/TheDroneMaster
-repo_name: HarvieSorroway/TheDroneMaster
+repo_url: https://github.com/rwmoddingch/ChModdingWiki
+repo_name: rwmoddingch/ChModdingWiki
 
 extra_css:
   - stylesheets/extra.css
