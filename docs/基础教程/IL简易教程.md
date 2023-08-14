@@ -11,14 +11,14 @@ IL是.NET框架中中间语言（Intermediate Language）的缩写。使用.NET�
 
 首先我们来看一小段IL代码的示例
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/1.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/1.png)
 
 
 是不是还能看到很多熟悉的类和方法？上面这段代码的来源是 rw 的 Player.AddFood(int add) 方法。那么其实可以看出，IL代码并没有改变原本C#代码编写的类型或者方法。IL其实并不是一门独立的语言。它所作的是把你在C#内进行的大部分操作翻译为了更加适合机器阅读的格式。比如类似+=这样的语法糖，会被转换成更加原始的形式以便翻译成更加底层的语音。
 ___
 ## 2.如何看懂IL代码
 
-IL代码除了上图在DnSpy中的形式外，还有种更普遍的形式，可以在ILSpy中看到![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/2.png)
+IL代码除了上图在DnSpy中的形式外，还有种更普遍的形式，可以在ILSpy中看到![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/2.png)
 
 
 大致观察一下就可以发现，虽然两者的格式有所区别，但本质是相同的，下面一段文本格式就是每行IL代码的基本格式。
@@ -39,7 +39,7 @@ public float Foo(float a)
     return b;
 }
 ```
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/4.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/4.png)
 
 
 首先看向IL代码的头部位置，它提供了两个基本信息：
@@ -60,7 +60,7 @@ ___
 
 得到基本信息后，我们就可以画出一个简单的结构示意图了（脑绘即可）
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/5.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/5.png)
 
 !!! note "注意"
     这里用虚色的并不是指可以往后添加更多的参数，而是表示在别的代码里有可能会出现更多的参数。不过局部变量是可以增加的。
@@ -73,10 +73,10 @@ ___
 
 在绝大多数情况下，堆栈是符合先进先出规则的。但在IL内有个例外情况。 当某个操作会一次消耗多个堆栈内的变量时（例如多参数函数的调用），会按照先进先出的顺序把堆栈内的变量对应到需求的位置上。下面的两张图说明了这个情况。
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/6.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/6.png)
 
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/7.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/7.png)
 
 
 **执行顺序**：不同与绝大多数的语言，IL代码是没有传统的分支和循环的。因此IL代码的执行就只有顺序执行，跳转和返回三个。分支和循环会通过一些带有条件判断或者不附带条件的跳转指令来实现。
@@ -159,7 +159,7 @@ public class Test
 ```
 然后用ILSpy查看Main函数生成的IL代码，可以得到如下的结果。
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/9.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/9.png)
 
 #### 更多的IL指令
 
@@ -282,24 +282,24 @@ if(c.TryGotoNext(MoveType.After,
 
 这种写法可以提供最佳的代码可读性，其匹配顺序为从上到下依次匹配你所编写的match类语句。当所有语句均匹配成功时，会认为找到了你需要的il代码段，并且将指针移动到规定处。用图片来表示的话这里就是这样的情况：
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/17.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/17.png)
 
 
 这里的Match有很多种，但不需要你每个记住。有个很简单的办法去记，Match基本是和IL指令一一对应的，例如有call就有MatchCall，有Ldfld就有MatchLdfld。普通的Match本身也可以传入OpCodes来指定匹配的指令。不过需要注意的是，这个OpCodes是位于MonoMod.Cecil.Cil下的那个，而非System.Reflection.Emit下的。不过后面这位以后可以用的上。
 
 接下来用ILSpy查看我们需要修改的函数的IL代码。
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/18.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/18.png)
 
 
 对应的源代码为
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/19.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/19.png)
 
 
 假设我们想对框中的代码进行修改，首先我们需要定位到这一段对应的il代码。
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/20.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/20.png)
 
 
 假如这里我们想要在玩家添加饱食度的时候获取到玩家的最大饱食度上限，同时让这个上限在参与运算时减少2，应该怎么做呢？
@@ -311,12 +311,12 @@ if(c.TryGotoNext(MoveType.After,
 c.Emit()
 c.EmitDelegate()
 ~~~
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/21.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/21.png)
 
 
 第一个比较好理解，就是直接在当前指针位置插入一段IL指令，具体情况如图所示：
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/22.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/22.png)
 
 
 第二个相对复杂一些，是直接插入一段委托。这里可以用lambda或者匿名委托来做参数，无需额外声明一个函数，不过如果复用率较高的话也可以额外声明。具体插入的不止一段IL代码，但基本情况和上面是类似的。
@@ -325,14 +325,15 @@ c.EmitDelegate()
 
 看到这里
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/23.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/23.png)
 
 
 原本的代码调用了ldarg0并call了一个属性的get方法消耗掉了堆栈顶端的实例变量，同时压入了一个int32类型的变量，这个变量就是我们需要的值。因此我们需要将指针定位到这段代码的下方。
 
 接着观察上方的语句
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/24.png)
+
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/24.png)
 
 
 这里有一个br语句，两个ldarg语句，一个call，因此我们可以利用他们来进行匹配。编写如下代码：
@@ -363,7 +364,7 @@ if (c.TryGotoNext(MoveType.After,
 
 编译程序集并运行游戏，就可以看到这段输出，这说明我们的il已经查找到了匹配的il代码块。
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/27.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/27.png)
 
 
 查找成功后我们就可以进行操作了。
@@ -386,7 +387,7 @@ c.EmitDelegate<Func<int, Player, int>>((origMaxFood, self) =>
 
 然后打开游戏运行测试，可以看到实现了我们想要的效果。
 
-![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/C%23%E7%BC%96%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/29.png)
+![图片](https://rwmoddingch.github.io/ChModdingWiki/assets/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/29.png)
 
 
 ### 一些补充
