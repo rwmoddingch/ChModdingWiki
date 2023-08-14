@@ -1,6 +1,5 @@
 ---
-authors:
-  - harvie
+comments: true
 ---
 # IL简易教程
 ## 1.  什么是IL
