@@ -48,6 +48,7 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - navigation.footer
 
 repo_url: https://github.com/rwmoddingch/ChModdingWiki
 repo_name: rwmoddingch/ChModdingWiki
@@ -55,6 +56,11 @@ repo_name: rwmoddingch/ChModdingWiki
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HarvieSorroway
+      name: Harvie
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -69,3 +75,16 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+nav:
+  - 欢迎: index.md
+  - 基础教程:
+    - 欢迎来到基础教程: 基础教程/欢迎来到基础教程.md
+    - module的概念: 基础教程/module的概念.md
+    - ILhook教程 : 基础教程/IL简易教程.md
+  - 深入雨世界:
+    - 准备深入雨世界: 深入雨世界/准备深入雨世界.md
+  - 一些重要的mod:
+    - SlugBase教程:
+      - 序言: 一些重要的mod/slugbase教程/序言.md
+      - 下载模板: 一些重要的mod/slugbase教程/下载模板.md
+      - 准备工作: 一些重要的mod/slugbase教程/准备工作.md
