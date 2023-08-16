@@ -593,18 +593,15 @@ timeline_before的优先级更高
 
 * **SlugcatStats.Name**
 
-
 **原版**: White,Yellow,Red
 
 **MSC**: Rivulet,Artificer,Saint,Spear,Gourmand,Slugpup,Inv
 
 * **CreatureCommunities.CommunityID**
 
-
 **原版**: None,All,Scavengers,Lizards,Cicadas,GarbageWorms,Deer,Jetfish 
 
 * **CreatureTemplate.Type**
-
 
 **原版**:  
 
@@ -621,11 +618,12 @@ ScavengerElite, Inspector, Yeek, BigJelly, SlugNPC, JungleLeech, ZoopLizar
 
 * **AbstractPhysicalObject.Type**
 
-
 **原版**: 
 
 Creature, Rock, Spear, FlareBomb, VultureMask, PuffBall, DangleFruit, Oracle, PebblesPearl, SLOracleSwarmer, 
-SSOracleSwarmer, DataPearl, SeedCob, WaterNut, JellyFish, Lantern, KarmaFlower, Mushroom, VoidSpawn, FirecrackerPlant, SlimeMold, FlyLure, ScavengerBomb, SporePlant, AttachedBee, EggBugEgg, NeedleEgg, DartMaggot, BubbleGrass, NSHSwarmer, OverseerCarcass, CollisionField, BlinkingFlower,
+SSOracleSwarmer, DataPearl, SeedCob, WaterNut, JellyFish, Lantern, KarmaFlower, Mushroom, VoidSpawn, FirecrackerPlant, 
+SlimeMold, FlyLure, ScavengerBomb, SporePlant, AttachedBee, EggBugEgg, NeedleEgg, DartMaggot, BubbleGrass, 
+NSHSwarmer, OverseerCarcass, CollisionField, BlinkingFlower,
 
 **MSC**:
 
