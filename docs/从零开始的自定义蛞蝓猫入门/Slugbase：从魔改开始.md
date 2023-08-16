@@ -608,8 +608,8 @@ timeline_before的优先级更高
 StandardGroundCreature, Slugcat, LizardTemplate, PinkLizard, GreenLizard, BlueLizard, YellowLizard, WhiteLizard,
 RedLizard, BlackLizard, Salamander, CyanLizard, Fly, Leech, SeaLeech, Snail, Vulture, GarbageWorm, LanternMouse,
 CicadaA, CicadaB, Spider, JetFish, BigEel, Deer, TubeWorm, DaddyLongLegs, BrotherLongLegs, TentaclePlant, PoleMimic, 
-MirosBird,TempleGuard, Centipede, RedCentipede, Centiwing, SmallCentipede, Scavenger, Overseer, VultureGrub, EggBug, BigSpider,
-SpitterSpider, SmallNeedleWorm, BigNeedleWorm, DropBug, KingVulture, Hazer
+MirosBird,TempleGuard, Centipede, RedCentipede, Centiwing, SmallCentipede, Scavenger, Overseer, VultureGrub, EggBug, 
+BigSpider, SpitterSpider, SmallNeedleWorm, BigNeedleWorm, DropBug, KingVulture, Hazer
 
 **MSC**: 
 
