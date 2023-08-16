@@ -600,20 +600,27 @@ timeline_before的优先级更高
 **原版**: None,All,Scavengers,Lizards,Cicadas,GarbageWorms,Deer,Jetfish 
 
 * **CreatureTemplate.Type**
-**原版**:  StandardGroundCreature, Slugcat, LizardTemplate, PinkLizard, GreenLizard, BlueLizard, YellowLizard, WhiteLizard, RedLizard, BlackLizard, Salamander, CyanLizard, Fly, Leech, SeaLeech, Snail, Vulture, GarbageWorm, LanternMouse, CicadaA, CicadaB, Spider, JetFish, BigEel, Deer, TubeWorm, DaddyLongLegs, BrotherLongLegs, TentaclePlant, PoleMimic, MirosBird, TempleGuard, Centipede, RedCentipede, Centiwing, SmallCentipede, Scavenger, Overseer, VultureGrub, EggBug, BigSpider, SpitterSpider, SmallNeedleWorm, BigNeedleWorm, DropBug, KingVulture, Hazer
+**原版**:  StandardGroundCreature, Slugcat, LizardTemplate, PinkLizard, GreenLizard, BlueLizard, YellowLizard, WhiteLizard,
+RedLizard, BlackLizard, Salamander, CyanLizard, Fly, Leech, SeaLeech, Snail, Vulture, GarbageWorm, LanternMouse,
+CicadaA, CicadaB, Spider, JetFish, BigEel, Deer, TubeWorm, DaddyLongLegs, BrotherLongLegs, TentaclePlant, PoleMimic, MirosBird,
+TempleGuard, Centipede, RedCentipede, Centiwing, SmallCentipede, Scavenger, Overseer, VultureGrub, EggBug, BigSpider,
+SpitterSpider, SmallNeedleWorm, BigNeedleWorm, DropBug, KingVulture, Hazer
 
 **MSC**: 
 
-MirosVulture, SpitLizard, EelLizard, MotherSpider, TerrorLongLegs, AquaCenti, HunterDaddy, FireBug, StowawayBug, ScavengerElite, Inspector, Yeek, BigJelly, SlugNPC, JungleLeech, ZoopLizard, ScavengerKing, TrainLizard 
+MirosVulture, SpitLizard, EelLizard, MotherSpider, TerrorLongLegs, AquaCenti, HunterDaddy, FireBug, StowawayBug, 
+ScavengerElite, Inspector, Yeek, BigJelly, SlugNPC, JungleLeech, ZoopLizard, ScavengerKing, TrainLizard 
 
 * **AbstractPhysicalObject.Type**
 **原版**: 
 
-Creature, Rock, Spear, FlareBomb, VultureMask, PuffBall, DangleFruit, Oracle, PebblesPearl, SLOracleSwarmer, SSOracleSwarmer, DataPearl, SeedCob, WaterNut, JellyFish, Lantern, KarmaFlower, Mushroom, VoidSpawn, FirecrackerPlant, SlimeMold, FlyLure, ScavengerBomb, SporePlant, AttachedBee, EggBugEgg, NeedleEgg, DartMaggot, BubbleGrass, NSHSwarmer, OverseerCarcass, CollisionField, BlinkingFlower,
+Creature, Rock, Spear, FlareBomb, VultureMask, PuffBall, DangleFruit, Oracle, PebblesPearl, SLOracleSwarmer, 
+SSOracleSwarmer, DataPearl, SeedCob, WaterNut, JellyFish, Lantern, KarmaFlower, Mushroom, VoidSpawn, FirecrackerPlant, SlimeMold, FlyLure, ScavengerBomb, SporePlant, AttachedBee, EggBugEgg, NeedleEgg, DartMaggot, BubbleGrass, NSHSwarmer, OverseerCarcass, CollisionField, BlinkingFlower,
 
 **MSC**:
 
-JokeRifle, Bullet, SingularityBomb, Spearmasterpearl, FireEgg, EnergyCell, Germinator, Seed, GooieDuck, LillyPuck, GlowWeed, MoonCloak, HalcyonPearl, DandelionPeach, HRGuard 
+JokeRifle, Bullet, SingularityBomb, Spearmasterpearl, FireEgg, EnergyCell, Germinator, Seed, GooieDuck, LillyPuck, 
+GlowWeed, MoonCloak, HalcyonPearl, DandelionPeach, HRGuard 
 
 
 ---
