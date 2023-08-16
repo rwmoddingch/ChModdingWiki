@@ -593,22 +593,25 @@ timeline_before的优先级更高
 
 * **SlugcatStats.Name**
 
+
 **原版**: White,Yellow,Red
 
 **MSC**: Rivulet,Artificer,Saint,Spear,Gourmand,Slugpup,Inv
 
 * **CreatureCommunities.CommunityID**
 
+
 **原版**: None,All,Scavengers,Lizards,Cicadas,GarbageWorms,Deer,Jetfish 
 
 * **CreatureTemplate.Type**
+
 
 **原版**:  
 
 StandardGroundCreature, Slugcat, LizardTemplate, PinkLizard, GreenLizard, BlueLizard, YellowLizard, WhiteLizard,
 RedLizard, BlackLizard, Salamander, CyanLizard, Fly, Leech, SeaLeech, Snail, Vulture, GarbageWorm, LanternMouse,
-CicadaA, CicadaB, Spider, JetFish, BigEel, Deer, TubeWorm, DaddyLongLegs, BrotherLongLegs, TentaclePlant, PoleMimic, MirosBird,
-TempleGuard, Centipede, RedCentipede, Centiwing, SmallCentipede, Scavenger, Overseer, VultureGrub, EggBug, BigSpider,
+CicadaA, CicadaB, Spider, JetFish, BigEel, Deer, TubeWorm, DaddyLongLegs, BrotherLongLegs, TentaclePlant, PoleMimic, 
+MirosBird,TempleGuard, Centipede, RedCentipede, Centiwing, SmallCentipede, Scavenger, Overseer, VultureGrub, EggBug, BigSpider,
 SpitterSpider, SmallNeedleWorm, BigNeedleWorm, DropBug, KingVulture, Hazer
 
 **MSC**: 
@@ -617,6 +620,7 @@ MirosVulture, SpitLizard, EelLizard, MotherSpider, TerrorLongLegs, AquaCent
 ScavengerElite, Inspector, Yeek, BigJelly, SlugNPC, JungleLeech, ZoopLizard, ScavengerKing, TrainLizard 
 
 * **AbstractPhysicalObject.Type**
+
 
 **原版**: 
 
