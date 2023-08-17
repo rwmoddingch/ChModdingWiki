@@ -123,7 +123,7 @@ internal static class PlayerModuleManager
 
 在有了目前的代码之后，我们便可以开始使用module类了。一般来说，module类的生命周期和它的目标类型是相同的。因此对于我们的PlayerModule，我们需要在Player类的实例被创建时，同时创建一个module类，并且通过manager建立它们之间的连接。
 
-鉴于上述的思想，我们首先需要hook Player类的构造函数，也就是ctor方法。在hook函数里，调用原函数后，我们紧接着创建module类的实例，并且在manager的playermodules中添加键值对：
+鉴于上述的思想，我们首先需要hook Player类的构造函数，也就是ctor方法。在hook方法里，调用原方法后，我们紧接着创建module类的实例，并且在manager的playermodules中添加键值对：
 
 ```c# title="PlayerModules.cs"
 internal static class PlayerHooks
@@ -174,7 +174,7 @@ internal static class PlayerHooks
 
 首先我们来实现第一个需求：建立和技能相关的数据变量。
 
-可以明确的是，我们需要读取猫猫的类型，然后再根据类型来进行一些判断。那么我们便可以编写一个SetUpModule的函数，并且把猫猫的类型作为参数传入该函数。同时我们需要三个变量： 
+可以明确的是，我们需要读取猫猫的类型，然后再根据类型来进行一些判断。那么我们便可以编写一个SetUpModule的方法，并且把猫猫的类型作为参数传入该方法。同时我们需要三个变量： 
 
 |变量名|变量类型|作用|
 |:----|:----|:----|
@@ -221,10 +221,10 @@ internal static class PlayerHooks
         }
     }
 ```
-我们在module的构造函数中调用了SetUp函数并完成了初始化。此后便不应该再改变和设置相关的三个变量的值了。
+我们在module的构造函数中调用了SetUp方法并完成了初始化。此后便不应该再改变和设置相关的三个变量的值了。
 #### 完善计时器
 
-根据对计时器的介绍，我们应该知道计时器必须要在Update函数中才可以正常工作。因此我们需要一个和Player.Update对应的函数。因此在module类中编写一个OnPlayerUpdate函数，以表明这个函数会在Player.Update中调用。同时在其中完成计时器的编写：
+根据对计时器的介绍，我们应该知道计时器必须要在Update方法中才可以正常工作。因此我们需要一个和Player.Update对应的方法。因此在module类中编写一个OnPlayerUpdate方法，以表明这个方法会在Player.Update中调用。同时在其中完成计时器的编写：
 
 ```c#  title="PlayerModules.cs"
         public void OnPlayerUpdate(Player player)
@@ -255,9 +255,9 @@ internal static class PlayerHooks
 
 #### 进行超级跳
 
-因为这个技能是触发型的，所有的效果在触发的那一瞬间便完成了，因此我们可以用一个函数来管理我们的效果。
+因为这个技能是触发型的，所有的效果在触发的那一瞬间便完成了，因此我们可以用一个方法来管理我们的效果。
 
-在PlayerModule中编写一个SuperJump函数：
+在PlayerModule中编写一个SuperJump方法：
 
 ```c#  title="PlayerModules.cs"
         public void SuperJump(Player player)
@@ -280,7 +280,7 @@ internal static class PlayerHooks
             coolDown = jumpCoolDown;
         }
 ```
-完成了超级跳的功能，我们还需要一个地方来触发它。因为需要在玩家进行跳跃的时候触发超级跳，因此我们需要在Player.Jump中调用一个TrySuperJump函数。
+完成了超级跳的功能，我们还需要一个地方来触发它。因为需要在玩家进行跳跃的时候触发超级跳，因此我们需要在Player.Jump中调用一个TrySuperJump方法。
 此时我们还需要一个额外的方法来帮助我们判断玩家是否可以进行跳跃，在这个方法中我们需要同时判断计时器状态，先前设置的数据以及玩家本身的状态，因此我们可以编写如下的代码：
 
 ```c# title="PlayerModules.cs"
@@ -290,7 +290,7 @@ internal static class PlayerHooks
                    coolDown == 0;
         }
 ```
-然后我们可以编写TrySuperJump函数：
+然后我们可以编写TrySuperJump方法：
 ```c# title="PlayerModules.cs"
         public void TrySuperJump(Player player)
         {

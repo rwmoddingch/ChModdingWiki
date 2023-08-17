@@ -56,11 +56,6 @@ repo_name: rwmoddingch/ChModdingWiki
 extra_css:
   - stylesheets/extra.css
 
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/HarvieSorroway
-      name: Harvie
 markdown_extensions:
   - admonition
   - pymdownx.details
