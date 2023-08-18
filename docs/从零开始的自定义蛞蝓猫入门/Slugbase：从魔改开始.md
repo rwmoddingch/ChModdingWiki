@@ -450,7 +450,7 @@ like取值范围[-1,1]，strength取值范围[0,1]
 ```json
 "maul_blacklist": [ "Scavenger", "PinkLizard" ]
 ```
-不可被这个角色撕咬的生物的列表，接受的字符串必须包含于<CreatureTemplate.Type>中
+不可被这个角色撕咬的生物的列表，接受的字符串必须包含于CreatureTemplate.Type中
 #### **"maul_damage"（float）**
 
 ```json
@@ -577,7 +577,7 @@ like取值范围[-1,1]，strength取值范围[0,1]
 "world_state": [ "Spear", "Red" ]
 ```
 玩家的世界状态id，包括了生物生成和房间连接
-接受的字符串必须包含于<SlugcatStats.Name>中
+接受的字符串必须包含于SlugcatStats.Name中
 
 如指定多个，则从第一个开始尝试，如果该角色名称不存在则继续尝试下一个
 
