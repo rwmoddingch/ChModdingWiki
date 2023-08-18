@@ -406,9 +406,9 @@ like取值范围[-1,1]，strength取值范围[0,1]
 
 "plants"表示玩家食用非肉食物体的饱食度乘数
 
-"overrides"为单独的生物（包含在<CreatureTemplate.Type>中）和物体（包含在<AbstractPhysicalObject.Type>中）设置饱食度乘数
+"overrides"为单独的生物（包含在CreatureTemplate.Type中）和物体（包含在AbstractPhysicalObject.Type中）设置饱食度乘数
 
-"base"是可选的 如果使用这个参数 接受的字符串必须包含于<SlugcatStats.Name>中。如果提供了"base"则其他参数都是可选的，默认为base代表的角色的数值。不指定"base"的情况下则需要指定其他参数
+"base"是可选的 如果使用这个参数 接受的字符串必须包含于SlugcatStats.Name中。如果提供了"base"则其他参数都是可选的，默认为base代表的角色的数值。不指定"base"的情况下则需要指定其他参数
 
 #### **"custom_colors"**
 
