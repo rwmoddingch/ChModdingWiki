@@ -85,4 +85,14 @@ nav:
     - Slugbase：从魔改开始: 从零开始的自定义蛞蝓猫入门/Slugbase：从魔改开始.md
     - 角色技能修改: 从零开始的自定义蛞蝓猫入门/自定义角色：技能修改.md
     - 实操挑战：羽落技能: 从零开始的自定义蛞蝓猫入门/自定义角色：实操.md
+  - Random Buff文档:
+    - Buff的配置文件: RandomBuff/配置文件.md
+    - 自定义Buff程序入口 BuffEntry: RandomBuff/BuffEntry.md
+    - Buff: RandomBuff/Buff.md
+    - BuffData: RandomBuff/BuffData.md
+    - BuffDataManager: RandomBuff/BuffDataManager.md
+    - BuffPoolManager: RandomBuff/BuffPoolManager.md
+    - BuffRegister: RandomBuff/BuffRegister.md
+
+
 
