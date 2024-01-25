@@ -1,6 +1,6 @@
 <h1>BuffPoolManager</h1>
 
-单轮回内负责管理增益数据。为单例模式（调用请使用BuffPoolManager.Instance.xxxx）
+单轮回内负责管理增益实例。为单例模式（调用请使用BuffPoolManager.Instance.xxxx）
 
 <h2>方法</h2>
 

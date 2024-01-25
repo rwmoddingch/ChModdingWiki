@@ -26,6 +26,7 @@ public abstract void DataLoaded(bool newData);
 
 ```csharp
 //获取配置属性（可以用下文数据的方式获取）
+//name是配置文件里Custom下的自定义属性名称（参见Buff的配置文件）
 public T GetConfig<T>(string name);
 ```
 
@@ -45,7 +46,8 @@ public AnyType saveInWorld; //创建一个想要保存到猫的游戏存档的�
 配置属性
 ```csharp
 [CustomStaticConfig]
-public AnyType saveInSlot { get; } //创建一个配置属性
+public AnyType 自定义属性名称 { get; } //创建一个配置属性
+//自定义属性名称是配置文件里Custom下的定义的（参见Buff的配置文件）
 //这个属性不跟随猫存档变化而变化
 //会有一个单独的界面(类似mod界面)来进行配置
 
