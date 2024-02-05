@@ -86,6 +86,7 @@ nav:
     - 角色技能修改: 从零开始的自定义蛞蝓猫入门/自定义角色：技能修改.md
     - 实操挑战：羽落技能: 从零开始的自定义蛞蝓猫入门/自定义角色：实操.md
   - Random Buff文档:
+    - mod文件目录: RandomBuff/mod配置.md
     - Buff的配置文件: RandomBuff/配置文件.md
     - 自定义Buff程序入口 BuffEntry: RandomBuff/BuffEntry.md
     - Buff: RandomBuff/Buff.md

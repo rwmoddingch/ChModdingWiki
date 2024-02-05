@@ -19,6 +19,11 @@ public virtual void Stack();
 ```
 
 ```csharp
+//减少堆叠次数或删除（非堆叠卡）的时候被调用
+public virtual void UnStack(); 
+```
+
+```csharp
 //当存档数据读取后调用
 //可以用于数据初始化
 public abstract void DataLoaded(bool newData); 
@@ -37,6 +42,17 @@ public T GetConfig<T>(string name);
 public abstract BuffID ID { get; }
 ```
 
+```csharp
+//堆叠层数，可以替换为自己的get,set
+public virtual int StackLayer { get; set; }
+```
+
+```csharp
+// 如果为true，则在周期结束时自动移除本增益
+public bool NeedDeletion { get; set; }
+```
+
+
 存档数据
 ```csharp
 [JsonProperty]
@@ -53,4 +69,6 @@ public AnyType 自定义属性名称 { get; } //创建一个配置属性
 
 ///注意 ： 必须使用 {get;} 的形式！！！
 ```
+
+
 
