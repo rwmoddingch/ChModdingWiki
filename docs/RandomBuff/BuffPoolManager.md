@@ -10,6 +10,17 @@
 public IBuff GetBuff(BuffID id);
 ```
 
+```csharp
+//获取BuffData
+//如果不存在则返回 null
+public BuffData GetBuffData(BuffID id);
+```
+
+```csharp
+//获取全部启用的Buff ID
+public List<BuffID> GetAllBuffIds();
+```
+
 <h2>属性</h2>
 
 ```csharp

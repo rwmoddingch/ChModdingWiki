@@ -91,7 +91,6 @@ nav:
     - 自定义Buff程序入口 BuffEntry: RandomBuff/BuffEntry.md
     - Buff: RandomBuff/Buff.md
     - BuffData: RandomBuff/BuffData.md
-    - BuffDataManager: RandomBuff/BuffDataManager.md
     - BuffPoolManager: RandomBuff/BuffPoolManager.md
     - BuffRegister: RandomBuff/BuffRegister.md
 
