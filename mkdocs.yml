@@ -93,6 +93,13 @@ nav:
     - BuffData: RandomBuff/BuffData.md
     - BuffCore: RandomBuff/BuffCore.md
     - BuffRegister: RandomBuff/BuffRegister.md
+    - API:
+      - Render:
+        - BuffCardRenderer.cs: RandomBuff/api/Render/CardRender/BuffCardRenderer.md
+        - CardCameraController.cs: RandomBuff/api/Render/CardRender/CardCameraController.md
+        - CardGraphTextController.cs: RandomBuff/api/Render/CardRender/CardGraphTextController.md
+        - CardHighlightController.cs: RandomBuff/api/Render/CardRender/CardHighlightController.md
+        - CardRendererManager.cs: RandomBuff/api/Render/CardRender/CardRendererManager.md
 
 
 
