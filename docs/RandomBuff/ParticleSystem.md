@@ -1,4 +1,4 @@
-## 基本使用方法
+## 粒子系统基本使用方法
 
 新建一个ParticleEmitter实例（粒子发射器）并使用ApplyEmitterModule、ApplyParticleSpawn和ApplyParticleModule方法设置发射器与粒子的具体行为。
 
