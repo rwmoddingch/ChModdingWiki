@@ -11,15 +11,15 @@ emitter.ApplyParticleModule(new AddElement(emitter, new Particle.SpriteInitParam
 对于一个设置完成的ParticleEmitter，使用ParticleSystem.ApplyEmitterAndInit(ParticleEmitter emitter)方法“应用”这个发射器使其能实际发挥作用。
 ## (一般可能用到的)字段
 
-#### **ParticleEmitter.pos（**Vector2）
+#### **ParticleEmitter.pos**（**Vector2）
 
 发射器的中心位置，如果设置movetype为Relative则粒子的运动以该位置为原点 
 
-#### **ParticleEmitter.vel（**Vector2）
+#### **ParticleEmitter.vel**（**Vector2）
 
 发射器的速度，似乎如果把发射器绑定到有物理行为的物体上时就会对它赋值
 
-#### **ParticleEmitter.room（**Room）
+#### **ParticleEmitter.room**（**Room）
 
 发射器所在的房间
 
