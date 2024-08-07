@@ -89,6 +89,7 @@ nav:
     - ParticleSystem简易指南: RandomBuff/ParticleSystem.md
     - mod文件目录: RandomBuff/mod配置.md
     - Buff的配置文件: RandomBuff/配置文件.md
+    - 任务的配置文件: RandomBuff/任务文件.md
     - 自定义Buff程序入口 BuffEntry: RandomBuff/BuffEntry.md
     - Buff: RandomBuff/Buff.md
     - BuffData: RandomBuff/BuffData.md

@@ -29,9 +29,18 @@ public abstract void Destroy();
 // 强制触发增益效果，一般用于显示HUD反馈
 public void TriggerSelf(bool ignoreCheck = false)
 ```
-        
-<h2>属性</h2>
 
+```csharp
+// 创建临时卡牌池，会在轮回末销毁
+public TemporaryBuffPool GetTemporaryBuffPool();
+```
+
+```csharp
+// 获取绑定的按键
+// !!!注意请使用BuffInput的方法进行按键判断!!!
+public string GetBindKey();
+```
+<h2>属性</h2>
 
 
 ```csharp
@@ -57,6 +66,13 @@ public TData Data { get; }
 ```csharp
 //增益对应的实例（可能为空！）
 public static TBuff Instance { get; }
+```
+
+
+```csharp
+//卡牌的计时器，在构造方法中赋值后，不可为null
+//赋值后可以在任意时机修改值
+public BuffTimer MyTimer { get; set; }
 ```
 
 
