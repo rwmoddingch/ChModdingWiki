@@ -10,6 +10,19 @@
 //注册新的增益
 //HookType 需要存在静态的HookOn函数或者LongLifeCycleHookOn函数
 public static void RegisterBuff<BuffType, DataType, HookType>(BuffID id);
+
+//一个HookType示例
+public class HookSample
+{
+    //会自动生成对应的取消hook函数
+    //hook只会在卡牌启用的时候生效
+    public static void HookOn()
+    {
+        On.Player.ctor += .....
+    
+    }
+}
+
 ```
 
 ```csharp
