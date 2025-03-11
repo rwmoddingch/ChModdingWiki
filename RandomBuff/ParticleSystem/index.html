@@ -1,0 +1,2199 @@
+
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../mod%E9%85%8D%E7%BD%AE/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+    <title>雨世界modding</title>
+
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h224V368c0-26.5 21.5-48 48-48h112V96c0-35.3-28.7-64-64-64zm384 320H336c-8.8 0-16 7.2-16 16v112l32-32 64-64z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96m0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32m32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16m16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-40-176h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24m40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6S434.5.2 425.3 9.3L381.7 53c-48 48-113.1 75-181 75H64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64v128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352h8.7c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.3c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4zm-64 76.7v262.6C357.2 317.8 280.5 288 200.7 288H192v-96h8.7c79.8 0 156.5-29.8 215.3-83.3"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-86.2-346.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1 0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6-13.3 0-24-10.7-24-24v-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1 0-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32m0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24m32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.1 52.4 442.6 6.5c-1.9-3.9-6.1-6.5-10.5-6.5s-8.5 2.6-10.4 6.5l-16.5 45.9-46 16.8c-4.3 1.6-7.3 5.9-7.2 10.4 0 4.5 3 8.7 7.2 10.2l45.7 16.8 16.8 45.8c1.5 4.4 5.8 7.5 10.4 7.5s8.9-3.1 10.4-7.5l16.5-45.8 45.7-16.8c4.2-1.5 7.2-5.7 7.2-10.2 0-4.6-3-8.9-7.2-10.4zm-132.4 53c-12.5-12.5-32.8-12.5-45.3 0l-2.9 2.9c-22-8-45.8-12.3-70.5-12.3C93.1 96 0 189.1 0 304s93.1 208 208 208 208-93.1 208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5 12.5-32.8 0-45.3l-80-80zM200 192c-57.4 0-104 46.6-104 104v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-75.1 60.9-136 136-136h8c8.8 0 16 7.2 16 16s-7.2 16-16 16z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9V464c0 26.5 21.5 48 48 48h48v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48v-65.1M96 256a64 64 0 1 1 128 0 64 64 0 1 1-128 0m256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M320 0c17.7 0 32 14.3 32 32v64h120c39.8 0 72 32.2 72 72v272c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72h120V32c0-17.7 14.3-32 32-32M208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16zM264 256a40 40 0 1 0-80 0 40 40 0 1 0 80 0m152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80M48 224h16v192H48c-26.5 0-48-21.5-48-48v-96c0-26.5 21.5-48 48-48m544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48h-16V224z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M288 0H128c-17.7 0-32 14.3-32 32s14.3 32 32 32v132.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6 0 480.9 31.1 512 69.4 512h309.2c38.3 0 69.4-31.1 69.4-69.4 0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32S337.7 0 320 0zm-96 196.8V64h64v132.8c0 23.7 6.6 46.9 19 67.1l34.5 56.1h-171l34.5-56.1c12.4-20.2 19-43.4 19-67.1"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216m256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Simplified+Chinese:300,300i,400,400i,700,700i%7CFira+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans Simplified Chinese";--md-code-font:"Fira Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳轉至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="頁首">
+    <a href="../.." title="雨世界modding" class="md-header__button md-logo" aria-label="雨世界modding" data-md-component="logo">
+      
+  <img src="../../assets/rainworld-title.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            雨世界modding
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ParticleSystem简易指南
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜尋" placeholder="搜尋" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="搜尋">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空" aria-label="清空" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜尋引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rwmoddingch/ChModdingWiki" title="前往倉庫" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rwmoddingch/ChModdingWiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="導航" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="雨世界modding" class="md-nav__button md-logo" aria-label="雨世界modding" data-md-component="logo">
+      
+  <img src="../../assets/rainworld-title.png" alt="logo">
+
+    </a>
+    雨世界modding
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rwmoddingch/ChModdingWiki" title="前往倉庫" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rwmoddingch/ChModdingWiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    欢迎
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    基础教程
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            基础教程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    欢迎来到基础教程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/module%E7%9A%84%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    module的概念
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/IL%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ILhook教程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    深入雨世界
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            深入雨世界
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B7%B1%E5%85%A5%E9%9B%A8%E4%B8%96%E7%95%8C/%E5%87%86%E5%A4%87%E6%B7%B1%E5%85%A5%E9%9B%A8%E4%B8%96%E7%95%8C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    准备深入雨世界
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B7%B1%E5%85%A5%E9%9B%A8%E4%B8%96%E7%95%8C/%E7%BB%98%E5%88%B6%E6%96%B9%E6%B3%95%E5%85%A5%E9%97%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    绘制方法入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    从零开始的自定义蛞蝓猫入门
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            从零开始的自定义蛞蝓猫入门
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E8%9B%9E%E8%9D%93%E7%8C%AB%E5%85%A5%E9%97%A8/%E5%BA%8F%E8%A8%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    序言
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E8%9B%9E%E8%9D%93%E7%8C%AB%E5%85%A5%E9%97%A8/Slugbase%EF%BC%9A%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slugbase：准备工作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E8%9B%9E%E8%9D%93%E7%8C%AB%E5%85%A5%E9%97%A8/Slugbase%EF%BC%9A%E4%BB%8E%E9%AD%94%E6%94%B9%E5%BC%80%E5%A7%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slugbase：从魔改开始
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E8%9B%9E%E8%9D%93%E7%8C%AB%E5%85%A5%E9%97%A8/%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A7%92%E8%89%B2%EF%BC%9A%E6%8A%80%E8%83%BD%E4%BF%AE%E6%94%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    角色技能修改
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E8%9B%9E%E8%9D%93%E7%8C%AB%E5%85%A5%E9%97%A8/%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A7%92%E8%89%B2%EF%BC%9A%E5%AE%9E%E6%93%8D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实操挑战：羽落技能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Random Buff文档
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Random Buff文档
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    文档目录
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    ParticleSystem简易指南
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    ParticleSystem简易指南
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目錄">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目錄
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      粒子系统基本使用方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      (一般可能用到的)字段
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(一般可能用到的)字段">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#particleemitterposvector2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ParticleEmitter.pos（Vector2）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#particleemittervelvector2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ParticleEmitter.vel（Vector2）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#particleemitterroomroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      ParticleEmitter.room（Room）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module" class="md-nav__link">
+    <span class="md-ellipsis">
+      方法与Module
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法与Module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applyemittermodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      ApplyEmitterModule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ApplyEmitterModule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setemitterlife" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetEmitterLife
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bindemittertophysicalobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      BindEmitterToPhysicalObject
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applyparticlespawn" class="md-nav__link">
+    <span class="md-ellipsis">
+      ApplyParticleSpawn
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ApplyParticleSpawn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ratespawnermodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      RateSpawnerModule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#burstspawnermodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      BurstSpawnerModule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applyparticlemodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      ApplyParticleModule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ApplyParticleModule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addelement" class="md-nav__link">
+    <span class="md-ellipsis">
+      AddElement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmovetype" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetMoveType
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setconstvelociy" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetConstVelociy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandomvelocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomVelocity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsphericalvelocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetSphericalVelocity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setvelociyfromemitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetVelociyFromEmitter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandomrotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomRotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandomscale" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomScale
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandompos" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomPos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandomlife" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomLife
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setconstcolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetConstColor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandomcolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomColor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constantacc" class="md-nav__link">
+    <span class="md-ellipsis">
+      ConstantAcc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gravity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gravity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlife" class="md-nav__link">
+    <span class="md-ellipsis">
+      （各种各样的）OverLife
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simpleparticlephysic" class="md-nav__link">
+    <span class="md-ellipsis">
+      SimpleParticlePhysic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultdrawer" class="md-nav__link">
+    <span class="md-ellipsis">
+      DefaultDrawer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traildrawer" class="md-nav__link">
+    <span class="md-ellipsis">
+      TrailDrawer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mod%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mod文件目录
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Buff的配置文件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BB%BB%E5%8A%A1%E6%96%87%E4%BB%B6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    任务的配置文件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BuffEntry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    自定义Buff程序入口 BuffEntry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Buff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Buff
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BuffData/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BuffData
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BuffCore/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BuffCore
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BuffRegister/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BuffRegister
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_11" id="__nav_5_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_11">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_11_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_11_1" id="__nav_5_11_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Render
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_11_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_11_1">
+            <span class="md-nav__icon md-icon"></span>
+            Render
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Render/CardRender/BuffCardRenderer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BuffCardRenderer.cs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Render/CardRender/CardCameraController/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CardCameraController.cs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Render/CardRender/CardGraphTextController/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CardGraphTextController.cs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Render/CardRender/CardHighlightController/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CardHighlightController.cs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Render/CardRender/CardRendererManager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CardRendererManager.cs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目錄">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目錄
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      粒子系统基本使用方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      (一般可能用到的)字段
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(一般可能用到的)字段">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#particleemitterposvector2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ParticleEmitter.pos（Vector2）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#particleemittervelvector2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ParticleEmitter.vel（Vector2）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#particleemitterroomroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      ParticleEmitter.room（Room）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module" class="md-nav__link">
+    <span class="md-ellipsis">
+      方法与Module
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法与Module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applyemittermodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      ApplyEmitterModule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ApplyEmitterModule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setemitterlife" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetEmitterLife
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bindemittertophysicalobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      BindEmitterToPhysicalObject
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applyparticlespawn" class="md-nav__link">
+    <span class="md-ellipsis">
+      ApplyParticleSpawn
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ApplyParticleSpawn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ratespawnermodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      RateSpawnerModule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#burstspawnermodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      BurstSpawnerModule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applyparticlemodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      ApplyParticleModule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ApplyParticleModule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addelement" class="md-nav__link">
+    <span class="md-ellipsis">
+      AddElement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmovetype" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetMoveType
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setconstvelociy" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetConstVelociy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandomvelocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomVelocity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsphericalvelocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetSphericalVelocity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setvelociyfromemitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetVelociyFromEmitter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandomrotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomRotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandomscale" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomScale
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandompos" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomPos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandomlife" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomLife
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setconstcolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetConstColor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrandomcolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetRandomColor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constantacc" class="md-nav__link">
+    <span class="md-ellipsis">
+      ConstantAcc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gravity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gravity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlife" class="md-nav__link">
+    <span class="md-ellipsis">
+      （各种各样的）OverLife
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simpleparticlephysic" class="md-nav__link">
+    <span class="md-ellipsis">
+      SimpleParticlePhysic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultdrawer" class="md-nav__link">
+    <span class="md-ellipsis">
+      DefaultDrawer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traildrawer" class="md-nav__link">
+    <span class="md-ellipsis">
+      TrailDrawer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>ParticleSystem简易指南</h1>
+
+<h2 id="_1">粒子系统基本使用方法</h2>
+<p>新建一个ParticleEmitter实例（粒子发射器）并使用ApplyEmitterModule、ApplyParticleSpawn和ApplyParticleModule方法设置发射器与粒子的具体行为。</p>
+<p><div class="language-c# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">//示例，并不完整，只是为了展示方法和模块该怎么写</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">emitter</span><span class="p">.</span><span class="n">ApplyEmitterModule</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">SetEmitterLife</span><span class="p">(</span><span class="n">emitter</span><span class="p">,</span><span class="w"> </span><span class="n">setLife</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">));</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">emitter</span><span class="p">.</span><span class="n">ApplyParticleSpawn</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">BurstSpawnerModule</span><span class="p">(</span><span class="n">emitter</span><span class="p">,</span><span class="w"> </span><span class="mi">260</span><span class="p">));</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">emitter</span><span class="p">.</span><span class="n">ApplyParticleModule</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">AddElement</span><span class="p">(</span><span class="n">emitter</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Particle</span><span class="p">.</span><span class="n">SpriteInitParam</span><span class="p">(</span><span class="s">&quot;Futile_White&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;FlatLight&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5f</span><span class="p">)));</span>
+</span></code></pre></div>
+对于一个设置完成的ParticleEmitter，使用ParticleSystem.ApplyEmitterAndInit(ParticleEmitter emitter)方法“应用”这个发射器使其能实际发挥作用。</p>
+<h2 id="_2">(一般可能用到的)字段</h2>
+<h4 id="particleemitterposvector2"><strong>ParticleEmitter.pos</strong>（<strong>Vector2</strong>）</h4>
+<p>发射器的中心位置，如果设置movetype为Relative则粒子的运动以该位置为原点 </p>
+<h4 id="particleemittervelvector2"><strong>ParticleEmitter.vel</strong>（<strong>Vector2</strong>）</h4>
+<p>发射器的速度，似乎如果把发射器绑定到有物理行为的物体上时就会对它赋值</p>
+<h4 id="particleemitterroomroom"><strong>ParticleEmitter.room</strong>（<strong>Room</strong>）</h4>
+<p>发射器所在的房间</p>
+<h2 id="module">方法与Module</h2>
+<h3 id="applyemittermodule">ApplyEmitterModule</h3>
+<p>控制发射器的行为（主要为控制发射器生命周期），默认包含以下两个module：</p>
+<h4 id="setemitterlife"><strong>SetEmitterLife</strong></h4>
+<p><strong>(ParticleEmitter emitter, int life, bool loop, bool killOnFinish = true)</strong></p>
+<p>设置发射器的寿命，通过计时器来自动重置或清除发射器</p>
+<p>emitter：目标发射器实例</p>
+<p>life：目标发射器的寿命，每次更新（一个逻辑帧即0.025s）时减少</p>
+<p>loop：是否循环。如果为True则当life=0时重置life的值</p>
+<p>killOnFinish：是否在结束时清除，默认为True。如果为True则当life=0时执行Die方法</p>
+<h4 id="bindemittertophysicalobject">BindEmitterToPhysicalObject</h4>
+<p><strong>(ParticleEmitter emitter, PhysicalObject physicalObject, int chunk = 0, bool dieOnNoRoomOrNull = true)</strong></p>
+<p>将发射器绑定到有物理性质的物体上，发射器在初始化和更新时将会尝试同步该物体的位置和速度，而且如果找不到该物体或该物体房间为空则清除发射器</p>
+<p>emitter：目标发射器实例</p>
+<p>physicalObject：目标物体实例</p>
+<p>chunk：如果物体有多个节段则决定绑定到哪一段，默认为0</p>
+<p>dieOnNoRoomOrNull：如果无房间或为空则清除（似乎并没有用到？目前只要房间和物体中任何一个找不到就Die）</p>
+<p>当然也可以不使用这两个Module，手动给Emitter的速度和位置赋值也是可以的，可以用Die方法强制清除发射器</p>
+<h3 id="applyparticlespawn">ApplyParticleSpawn</h3>
+<p>控制粒子生成的模式，默认包含以下两个module：</p>
+<h4 id="ratespawnermodule">RateSpawnerModule</h4>
+<p><strong>(ParticleEmitter emitter, int maxParticleCount, int ratePerSec)</strong></p>
+<p>按一定的频率连续生成粒子，直到达到最大值</p>
+<p>emitter：目标发射器实例</p>
+<p>maxParticleCount：该发射器在一个生命周期中能累计产生的最大粒子数</p>
+<p>rateParSec：粒子生成速率</p>
+<h4 id="burstspawnermodule">BurstSpawnerModule</h4>
+<p><strong>(ParticleEmitter emitter, int count)</strong></p>
+<p>在初始化时一次性生成指定数量的粒子</p>
+<p>emitter：目标发射器实例</p>
+<p>count：生成的粒子数</p>
+<p>同上，你大概可以不用这些Module 而是自己调用ParticleEmitter的SpawnParticle()方法让它以你喜欢的方式生成粒子</p>
+<h3 id="applyparticlemodule">ApplyParticleModule</h3>
+<p>控制粒子的具体行为，默认包含以下模块：</p>
+<p><strong>/初始化/</strong></p>
+<p>这些Module负责控制粒子的初始化行为（指定初始状态的速度/大小/外观等），可以自己选取并组合。有些对同一属性赋值的Module不可叠加并且会按顺序覆盖之前的设定。也可以自己编写新的Module以实现更丰富的效果。</p>
+<h4 id="addelement">AddElement</h4>
+<p><strong>(ParticleEmitter emitter, params Particle.SpriteInitParam[] spriteInitParam)</strong></p>
+<p>为粒子添加外观元素（可以多次添加）</p>
+<p>emitter：目标发射器实例</p>
+<p>spriteInitParam：粒子的sprite渲染初始化 实际格式应为：</p>
+<p><strong>(string element, string shader, int layer = 8, float alpha = 1f, float scale = 1f, Color? constCol = null)</strong></p>
+<p>element：贴图名称</p>
+<p>shader：使用的着色器（mod开发群里提供了RW内置贴图和着色器预览）</p>
+<p>layer：渲染层，默认为8</p>
+<p>alpha：不透明度，默认为1</p>
+<p>scale：缩放比例，默认为1</p>
+<h4 id="setmovetype">SetMoveType</h4>
+<p><strong>(ParticleEmitter emitter, Particle.MoveType moveType)</strong></p>
+<p>设置粒子的运动参考系</p>
+<p>emitter：目标发射器实例</p>
+<p>moveType：如果为Realtive，则计算粒子坐标以发射器为参考系，如果为Global则使用世界坐标系</p>
+<h4 id="setconstvelociy">SetConstVelociy</h4>
+<p><strong>(ParticleEmitter emitter, Vector2 vel)</strong></p>
+<p>指定粒子的初始速度为固定值</p>
+<p>emitter：目标发射器实例</p>
+<p>vel：速度</p>
+<h4 id="setrandomvelocity">SetRandomVelocity</h4>
+<p><strong>(ParticleEmitter emitter, Vector2 a, Vector2 b,bool isDir = true)</strong></p>
+<p>使用两个向量随机指定粒子的初始方向和速度</p>
+<p>emitter：目标发射器实例</p>
+<p>a：指定x速度和y速度的一个值</p>
+<p>b：指定x速度和y速度的另一个值</p>
+<p>isDir：决定初始速度的计算方式</p>
+<p>如果为true，则对a和b的角度进行随机插值后转化为单位向量（作为方向） ，再乘以一个a和b的绝对值之间随机选取的值（作为速度），实际生成a与b夹角范围内的大小介于a和b之间的向量。</p>
+<p>如果为false，直接取a.x和b.x之间的随机数为x，a.y和b.y之间的随机数为y，然后合成向量</p>
+<h4 id="setsphericalvelocity">SetSphericalVelocity</h4>
+<p><strong>(ParticleEmitter emitter, float vA, float vB)</strong></p>
+<p>粒子飞向任何方向的可能性相等，速度为介于vA和vB之间的随机值</p>
+<p>emitter：目标发射器实例</p>
+<p>vA：速度的最大值或最小值</p>
+<p>vB：速度的最小值或最大值</p>
+<h4 id="setvelociyfromemitter">SetVelociyFromEmitter</h4>
+<p><strong>(ParticleEmitter emitter, float t)</strong></p>
+<p>基于发射器的速度设置粒子的初始速度</p>
+<p>emitter：目标发射器实例</p>
+<p>t：速度倍率</p>
+<h4 id="_3"></h4>
+<h4 id="setrandomrotation">SetRandomRotation</h4>
+<p><strong>(ParticleEmitter emitter, float rotationA, float rotationB)</strong></p>
+<p>随机化粒子的初始旋转</p>
+<p>emitter：目标发射器实例</p>
+<p>a，b：粒子旋转的取值范围（单位似乎是角度）</p>
+<h4 id="_4"></h4>
+<h4 id="setrandomscale">SetRandomScale</h4>
+<p><strong>(ParticleEmitter emitter, float a, float b)</strong></p>
+<p>随机化粒子的初始大小</p>
+<p>emitter：目标发射器实例</p>
+<p>a，b：粒子比例的取值范围（实际是产生(a,a)和(b,b)两个二维向量来控制大小以保证粒子图像等比例缩放）</p>
+<h4 id="_5"></h4>
+<h4 id="setrandompos">SetRandomPos</h4>
+<p><strong>(ParticleEmitter emitter, float rad)</strong></p>
+<p>粒子的生成位置分散在以发射器为中心 rad范围内的圆形区域中，且越靠近中心密度越高</p>
+<p>emitter：目标发射器实例</p>
+<p>rad：半径</p>
+<h4 id="setrandomlife">SetRandomLife</h4>
+<p><strong>(ParticleEmitter emitter, int a, int b)</strong></p>
+<p>随机化粒子寿命</p>
+<p>emitter：目标发射器实例</p>
+<p>a，b：粒子的存在时长（单位为逻辑帧）,会取a与b之间的随机值</p>
+<h4 id="setconstcolor">SetConstColor</h4>
+<p><strong>ParticleEmitter emitter, Color color)</strong></p>
+<p>设置固定的粒子起始颜色</p>
+<p>emitter：目标发射器实例</p>
+<p>color：颜色</p>
+<h4 id="setrandomcolor">SetRandomColor</h4>
+<p><strong>(ParticleEmitter emitter, float hueA, float hueB, float saturation, float lightness)</strong></p>
+<p>设置带有随机色相的初始粒子颜色</p>
+<p>emitter：目标发射器实例</p>
+<p>hueA：色相A</p>
+<p>hueB：色相B</p>
+<p>saturation：饱和度</p>
+<p>lightness：明度</p>
+<p><strong>/更新/</strong></p>
+<p>这些Module负责控制粒子更新时的行为（生命周期中颜色、外观和运动状态的变化），也可以视情况自由组合使用或自行编写新的Module</p>
+<h4 id="constantacc">ConstantAcc</h4>
+<p><strong>(ParticleEmitter emitter, Vector2 acc)</strong></p>
+<p>粒子的速度会均匀增加</p>
+<p>emitter：目标发射器实例（...这个 真的有必要每次都说一遍吗）</p>
+<p>acc：加速度</p>
+<h4 id="gravity">Gravity</h4>
+<p><strong>(ParticleEmitter emitter, float g)</strong></p>
+<p>粒子受重力影响</p>
+<p>emitter：目标发射器实例</p>
+<p>g：重力大小</p>
+<h4 id="overlife">（各种各样的）OverLife</h4>
+<p><strong>(emitter,(particle,particle.lifeparam) =&gt;{return})</strong></p>
+<p>指定粒子的某一属性在整个生命周期内变化，用法都差不多。</p>
+<p>emitter：目标发射器实例</p>
+<p>particle：目标粒子实例</p>
+<p>particle.lifeparam：目标粒子的生命周期（已经存在的时间与最大寿命的比值，范围0f-1f）</p>
+<p><div class="language-c# highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">//示例</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1">//建立新的发射器实例</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">emitter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ParticleEmitter</span><span class="p">(</span><span class="n">room</span><span class="p">);</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="cm">/*</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cm">省略了发射器行为、粒子生成模式和粒子初始化的设置</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="cm">*/</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1">//对于发射器实例emitter所产生的每一个粒子实例p以及该粒子的生命周期l，这两个被提供用于在大括号内计算并返回（return）一个float类型的值作为粒子的不透明度</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">emitter</span><span class="p">.</span><span class="n">ApplyParticleModule</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">AlphaOverLife</span><span class="p">(</span><span class="n">emitter</span><span class="p">,</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.2f</span><span class="p">)</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">5f</span><span class="p">;</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0.8f</span><span class="p">)</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="mf">1f</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">0.8f</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">5f</span><span class="p">;</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mf">1f</span><span class="p">;</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">    </span><span class="p">}));</span>
+</span></code></pre></div>
+ScaleOverLife：返回类型可以为float（缩放比例）或Vector2（长宽缩放比例）
+ColorOverLife：返回类型为Color（颜色）</p>
+<p>VelocityOverLife：返回类型为Vector2（速度）</p>
+<p>PositionOverLife：返回类型为Vector2（位置）</p>
+<p>RotationOverLife：返回类型为float（旋转角度）</p>
+<p>AlphaOverLife：返回类型为float，范围在0f-1f之间（透明度）</p>
+<h4 id="simpleparticlephysic">SimpleParticlePhysic</h4>
+<p><strong>(ParticleEmitter emitter, bool bounce, bool die, float velDamping = 0.8f)</strong></p>
+<p>粒子物理模拟</p>
+<p>emitter：目标发射器实例</p>
+<p>bounce：是否在触碰实体物块时反弹</p>
+<p>die：是否在触及实体物块时消失</p>
+<p>（如果die为true则会覆盖bounce的效果，如果bounce和die都为false则粒子会在触及实体物块后停止运动）</p>
+<p>velDamping：运动阻尼大小</p>
+<p><strong>/渲染/</strong></p>
+<p>这些Module负责控制粒子的渲染。</p>
+<p>-如果你只需要正常显示粒子的外观，则不需要手动指定渲染器。<strong>未指定渲染器时，会自动使用默认渲染器的默认设置。</strong></p>
+<p>-如果你不需要显示粒子但需要使用粒子的拖尾效果，则需要指定尾迹渲染器。这时候将不会自动使用默认渲染器 因此实际生效的只有尾迹渲染器。</p>
+<p>-如果你需要同时显示粒子本身和拖尾效果，则需要手动指定默认渲染器和尾迹渲染器，以保证两个渲染器都正常工作。</p>
+<h4 id="defaultdrawer">DefaultDrawer</h4>
+<p><strong>(ParticleEmitter emitter, int[] renderElementIndexs)</strong></p>
+<p>默认的渲染器，用于显示粒子本身。如果不指定渲染器则会自动使用默认渲染器的默认设置</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">//默认设置</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">//注意这边有个自动换行 实际上最好写在一行内</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">emitter</span><span class="p">.</span><span class="n">ApplyParticleModule</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">DefaultDrawer</span><span class="p">(</span><span class="n">emitter</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}));</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">//如果需要手动指定默认渲染器，建议直接套用默认设置，否则可能会引起不可预测的后果</span>
+</span></code></pre></div>
+<h4 id="traildrawer">TrailDrawer</h4>
+<p><strong>(ParticleEmitter emitter, int index, int trailCount = 10)</strong></p>
+<p>尾迹渲染器，仅用于显示尾迹效果，仅在手动指定渲染器时启用。</p>
+<p>emitter：emitter：目标发射器实例</p>
+<p>index：尾迹节段索引，暂时不建议设为1意外的任何值</p>
+<p>trailCount：尾迹总段数，会直接影响尾迹的长度，默认为10</p>
+<p>尾迹渲染器的具体设置需要在语句后的大括号内进行，类似于上面那些“OverLife”。</p>
+<p>提供了六个可被赋值的变量用于控制尾迹的外观：</p>
+<p><strong>gradient和colorOverLife</strong></p>
+<p>控制尾迹的颜色，两者的返回值都为Color类型，<strong>且两者中必须有且只有一个被指定</strong>。gradient提供尾迹某一节的索引i与尾迹的总节数a来单独为每一节计算颜色，而colorOverLife通过粒子的生命周期l来计算颜色，颜色将会应用于整条尾迹</p>
+<p><strong>width和widthModifyOverLife</strong></p>
+<p>控制尾迹的宽度，两者的返回值都为float类型，<strong>且必须指定width</strong>，两者效果可叠加。width提供尾迹某一节的索引i与尾迹的总节数a来单独为每一节计算宽度，而widthModifyOverLife通过粒子粒子的生命周期l来计算整条尾迹的宽度倍率，结果以乘积方式叠加</p>
+<p><strong>alpha和alphaModifyOverLife</strong></p>
+<p>用于控制尾迹的不透明度，两者的返回值都为float类型，<strong>且必须指定alpha</strong>，两者效果可叠加。alpha提供尾迹某一节的索引i与尾迹的总节数a来单独为每一节计算不透明度，而alphaModifyOverLife通过粒子的生命周期l来计算整条尾迹的不透明度倍率，结果以乘积方式叠加</p>
+<p>gradient/width/alpha提供粒子p、尾迹某一节的索引i、尾迹的总节数a。</p>
+<p>colorOverLife/widthModifyOverLife/alphaModifyOverLife提供粒子p、粒子的生命周期l。</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">//示例,来自ClusterBombBuff.cs</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1">//小 心 自 动 换 行</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">emitter</span><span class="p">.</span><span class="n">ApplyParticleModule</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">TrailDrawer</span><span class="p">(</span><span class="n">emitter</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">{</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">alpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="mf">1f</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">a</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="n">alphaModifyOverLife</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="mf">1f</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">l</span><span class="p">,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="n">gradient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">Color</span><span class="p">.</span><span class="n">Lerp</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="n">white</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">setColor</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">a</span><span class="p">),</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="mf">1f</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">setScaleXY</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.1f</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">});</span>
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="頁脚" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一頁: 文档目录">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一頁
+              </span>
+              <div class="md-ellipsis">
+                文档目录
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../mod%E9%85%8D%E7%BD%AE/" class="md-footer__link md-footer__link--next" aria-label="下一頁: mod文件目录">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一頁
+              </span>
+              <div class="md-ellipsis">
+                mod文件目录
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "content.code.copy", "content.code.select", "content.code.annotate", "navigation.footer"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u62f7\u8c9d", "clipboard.copy": "\u62f7\u8c9d", "search.result.more.one": "\u6b64\u9801\u5c1a\u6709 1 \u500b\u7b26\u5408\u7684\u9805\u76ee", "search.result.more.other": "\u6b64\u9801\u5c1a\u6709 # \u500b\u7b26\u5408\u7684\u9805\u76ee", "search.result.none": "\u6c92\u6709\u627e\u5230\u7b26\u5408\u689d\u4ef6\u7684\u7d50\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u689d\u4ef6\u7684\u7d50\u679c", "search.result.other": "\u627e\u5230 # \u500b\u7b26\u5408\u689d\u4ef6\u7684\u7d50\u679c", "search.result.placeholder": "\u9375\u5165\u4ee5\u958b\u59cb\u6aa2\u7d22", "search.result.term.missing": "\u7f3a\u5931", "select.version": "\u9078\u64c7\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
