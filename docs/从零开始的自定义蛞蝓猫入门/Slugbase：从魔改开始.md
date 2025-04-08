@@ -2,7 +2,7 @@
 comments: true
 ---
 # 下载模板mod
-你可以从[https://wwk.lanzoue.com/iIZiZ2qakrub](https://wwk.lanzoue.com/iIZiZ2qakrub)下载这个模板mod
+你可以从[https://wwk.lanzoue.com/iVEzw2t0pasf](https://wwk.lanzoue.com/iVEzw2t0pasf)下载这个模板mod
 
 
 ---
